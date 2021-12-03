@@ -1,0 +1,52 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 28, Failures: 4, Errors: 0, Skipped: 24, Time elapsed: 23.815 sec <<< FAILURE!
+setUp(com.vtiger.qa.TestCase.Calculator_Test)  Time elapsed: 6.96 sec  <<< FAILURE!
+java.lang.NoSuchMethodError: org.apache.commons.io.IOUtils.toString(Ljava/io/InputStream;Ljava/nio/charset/Charset;)Ljava/lang/String;
+	at io.github.bonigarcia.wdm.versions.VersionDetector.getProperties(VersionDetector.java:232)
+	at io.github.bonigarcia.wdm.versions.VersionDetector.getBrowserVersionFromTheShell(VersionDetector.java:137)
+	at io.github.bonigarcia.wdm.WebDriverManager.getBrowserVersionFromTheShell(WebDriverManager.java:731)
+	at io.github.bonigarcia.wdm.WebDriverManager.detectBrowserVersion(WebDriverManager.java:751)
+	at io.github.bonigarcia.wdm.WebDriverManager.resolveDriverVersion(WebDriverManager.java:614)
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:565)
+	at io.github.bonigarcia.wdm.WebDriverManager.setup(WebDriverManager.java:287)
+	at com.vtiger.qa.base.Test_Base.Initialization(Test_Base.java:43)
+	at com.vtiger.qa.TestCase.Calculator_Test.setUp(Calculator_Test.java:28)
+
+setUp(com.vtiger.qa.TestCase.Home_PageTest)  Time elapsed: 1.068 sec  <<< FAILURE!
+java.lang.NoSuchMethodError: org.apache.commons.io.IOUtils.toString(Ljava/io/InputStream;Ljava/nio/charset/Charset;)Ljava/lang/String;
+	at io.github.bonigarcia.wdm.versions.VersionDetector.getProperties(VersionDetector.java:232)
+	at io.github.bonigarcia.wdm.versions.VersionDetector.getBrowserVersionFromTheShell(VersionDetector.java:137)
+	at io.github.bonigarcia.wdm.WebDriverManager.getBrowserVersionFromTheShell(WebDriverManager.java:731)
+	at io.github.bonigarcia.wdm.WebDriverManager.detectBrowserVersion(WebDriverManager.java:751)
+	at io.github.bonigarcia.wdm.WebDriverManager.resolveDriverVersion(WebDriverManager.java:614)
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:565)
+	at io.github.bonigarcia.wdm.WebDriverManager.setup(WebDriverManager.java:287)
+	at com.vtiger.qa.base.Test_Base.Initialization(Test_Base.java:43)
+	at com.vtiger.qa.TestCase.Home_PageTest.setUp(Home_PageTest.java:26)
+
+setUp(com.vtiger.qa.TestCase.Lead_PageTest)  Time elapsed: 12.058 sec  <<< FAILURE!
+java.lang.NoSuchMethodError: org.apache.commons.io.IOUtils.toString(Ljava/io/InputStream;Ljava/nio/charset/Charset;)Ljava/lang/String;
+	at io.github.bonigarcia.wdm.versions.VersionDetector.getProperties(VersionDetector.java:232)
+	at io.github.bonigarcia.wdm.versions.VersionDetector.getBrowserVersionFromTheShell(VersionDetector.java:137)
+	at io.github.bonigarcia.wdm.WebDriverManager.getBrowserVersionFromTheShell(WebDriverManager.java:731)
+	at io.github.bonigarcia.wdm.WebDriverManager.detectBrowserVersion(WebDriverManager.java:751)
+	at io.github.bonigarcia.wdm.WebDriverManager.resolveDriverVersion(WebDriverManager.java:614)
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:565)
+	at io.github.bonigarcia.wdm.WebDriverManager.setup(WebDriverManager.java:287)
+	at com.vtiger.qa.base.Test_Base.Initialization(Test_Base.java:43)
+	at com.vtiger.qa.TestCase.Lead_PageTest.setUp(Lead_PageTest.java:37)
+
+setUp(com.vtiger.qa.TestCase.Login_PageTest)  Time elapsed: 0.994 sec  <<< FAILURE!
+java.lang.NoSuchMethodError: org.apache.commons.io.IOUtils.toString(Ljava/io/InputStream;Ljava/nio/charset/Charset;)Ljava/lang/String;
+	at io.github.bonigarcia.wdm.versions.VersionDetector.getProperties(VersionDetector.java:232)
+	at io.github.bonigarcia.wdm.versions.VersionDetector.getBrowserVersionFromTheShell(VersionDetector.java:137)
+	at io.github.bonigarcia.wdm.WebDriverManager.getBrowserVersionFromTheShell(WebDriverManager.java:731)
+	at io.github.bonigarcia.wdm.WebDriverManager.detectBrowserVersion(WebDriverManager.java:751)
+	at io.github.bonigarcia.wdm.WebDriverManager.resolveDriverVersion(WebDriverManager.java:614)
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:565)
+	at io.github.bonigarcia.wdm.WebDriverManager.setup(WebDriverManager.java:287)
+	at com.vtiger.qa.base.Test_Base.Initialization(Test_Base.java:43)
+	at com.vtiger.qa.TestCase.Login_PageTest.setUp(Login_PageTest.java:24)
+

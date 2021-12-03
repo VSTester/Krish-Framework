@@ -1,0 +1,9 @@
+com\vtiger\qa\ExtentReportsListener\ExtentReporterNG.class
+com\vtiger\qa\pages\Marketing_Page.class
+com\vtiger\qa\pages\Calculator_Page.class
+com\vtiger\qa\base\Test_Base.class
+com\vtiger\qa\pages\Home_classPage.class
+com\vtiger\qa\Util\TestUtil.class
+com\vtiger\qa\pages\Leads_Page.class
+com\vtiger\qa\Util\Xls_Reader.class
+com\vtiger\qa\pages\Login_Page.class

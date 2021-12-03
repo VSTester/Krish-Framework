@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Vtiger Application Test Suite">
+
+	<listeners>
+		<listener
+			class-name="com.vtiger.qa.ExtentReportsListener.ExtentReporterNG" />
+	</listeners>
+	<test thread-count="5" name="Test">
+		<classes>
+			<class name="com.vtiger.qa.TestCase.Login_PageTest" />
+			<!-- <class name="com.vtiger.qa.TestCase.Home_PageTest" />
+			<class name="com.vtiger.qa.TestCase.Calculator_Test" />
+			<class name="com.vtiger.qa.TestCase.Marketing_Test" />
+			<class name="com.vtiger.qa.TestCase.Lead_PageTest" /> -->
+
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->

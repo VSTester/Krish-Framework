@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Vtiger Application Test Automation Test Suits]">
+  <test thread-count="5" name="Vtiger App Test cases(failed)">
+    <classes>
+      <class name="com.vtiger.qa.TestCase.Calculator_Test">
+        <methods>
+          <include name="CalculatorTest"/>
+          <include name="CloseCalculatorTest"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.vtiger.qa.TestCase.Calculator_Test -->
+      <class name="com.vtiger.qa.TestCase.Home_PageTest">
+        <methods>
+          <include name="ActionmarketTest"/>
+          <include name="clickonmartTest"/>
+          <include name="homePageCalTest"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.vtiger.qa.TestCase.Home_PageTest -->
+    </classes>
+  </test> <!-- Vtiger App Test cases(failed) -->
+</suite> <!-- Failed suite [Vtiger Application Test Automation Test Suits] -->
