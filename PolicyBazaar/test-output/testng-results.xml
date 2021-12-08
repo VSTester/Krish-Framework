@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2021-12-08T22:10:50 IST" name="PolicyBazaar Application Test Suite" finished-at="2021-12-08T22:10:58 IST" duration-ms="7864">
+    <groups>
+    </groups>
+    <test started-at="2021-12-08T22:10:50 IST" name="Test" finished-at="2021-12-08T22:10:58 IST" duration-ms="7864">
+      <class name="com.policybazaar.qa.testCases.PolicyBzaarLoginPageTestCase">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.policybazaar.qa.testCases.PolicyBzaarLoginPageTestCase@1040be71]" started-at="2021-12-08T22:10:50 IST" name="setUp" finished-at="2021-12-08T22:10:57 IST" duration-ms="6714" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyLoginPageWithCredentials()[pri:1, instance:com.policybazaar.qa.testCases.PolicyBzaarLoginPageTestCase@1040be71]" started-at="2021-12-08T22:10:57 IST" name="verifyLoginPageWithCredentials" finished-at="2021-12-08T22:10:57 IST" duration-ms="371" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoginPageWithCredentials -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.policybazaar.qa.testCases.PolicyBzaarLoginPageTestCase@1040be71]" started-at="2021-12-08T22:10:57 IST" name="tearDown" finished-at="2021-12-08T22:10:58 IST" duration-ms="722" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.policybazaar.qa.testCases.PolicyBzaarLoginPageTestCase -->
+    </test> <!-- Test -->
+  </suite> <!-- PolicyBazaar Application Test Suite -->
+</testng-results>
