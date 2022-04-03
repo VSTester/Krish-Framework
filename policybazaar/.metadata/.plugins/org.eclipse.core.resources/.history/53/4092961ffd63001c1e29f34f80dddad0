@@ -1,0 +1,30 @@
+package com.policybazaar.qa.pages;
+
+import com.policybazaar.qa.objectrepository.PolicyBazaarQuotesPageObjectRepo;
+import com.policybazaar.qa.prodctpages.PolicyBazaarYourDetailPage;
+import com.policybazaar.qa.webUtil.TestUtil;
+
+public class PolicyBazaarQuotesPage extends PolicyBazaarQuotesPageObjectRepo {
+
+	private TestUtil util;
+
+	public PolicyBazaarQuotesPage(TestUtil util) {
+		super(util);
+		this.util = util;
+	}
+
+	public PolicyBazaarQuotesPage closeWelcomePopUp() {
+		util.clickOnElement(tobaccoDropDown);
+		util.acClickOnElement(QuotesCloseBtn);
+		return this;
+	}
+
+	public PolicyBazaarYourDetailPage startJourneyInSBIProduct() {
+		closeWelcomePopUp();
+		util.holdScript(6);
+		util.jsScrollUpDown(2.5);
+		util.clickOnElement(QuotesSbiPaymentBtn);
+		return new PolicyBazaarYourDetailPage(util);
+	}
+
+}

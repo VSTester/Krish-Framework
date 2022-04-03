@@ -1,0 +1,73 @@
+package com.policybazaar.qa.testCases;
+
+import org.testng.annotations.Test;
+import com.policybazaar.qa.base.Test_Base;
+import com.policybazaar.qa.pages.PolicyBazaarPreQuotesPage;
+import com.policybazaar.qa.pages.PolicyBazaarProductPage;
+import com.policybazaar.qa.pages.PolicyBazaarQuotesPage;
+
+public class PolicyBazaarProductPageTestCase extends Test_Base {
+	private PolicyBazaarPreQuotesPage pbLoginPage;
+	private PolicyBazaarQuotesPage pbQuotesPage;
+	private PolicyBazaarProductPage pbProductPage;
+
+	public PolicyBazaarProductPageTestCase() {
+		super();
+
+	}
+
+	public void beforeCurrentTestScript() {
+		pbLoginPage = new PolicyBazaarPreQuotesPage(util);
+		pbQuotesPage = pbLoginPage.enterloginPageCredentials();
+		pbQuotesPage.startJourneyInSBIProduct();
+		pbProductPage = new PolicyBazaarProductPage(util);
+
+	}
+
+	@Test(priority = 1)
+	public void validateProductPageLogo() {
+		beforeCurrentTestScript();
+		String actualLogo = pbProductPage.productLogo();
+		String expected = util.getExcelRf("TC-001").get("verify_pp_logo_Text");
+		util.verifyByAttributeValue(actualLogo, expected);
+	}
+
+	@Test(priority = 2)
+	public void validateLifeCoverValue() {
+		beforeCurrentTestScript();
+		pbProductPage.selectAmountInLifeCover();
+	}
+
+	
+	
+	@Test(priority = 3)
+	public void validateCoverTillAge() {
+		beforeCurrentTestScript();
+		pbProductPage.selectAgeInCoverTillAge();
+	}
+	
+	@Test(priority = 4)
+	public void vaidatePayForAge() {
+		beforeCurrentTestScript();
+		pbProductPage.selectAgeInPayFor();
+	}
+
+	@Test(priority = 5)
+	public void validateModeOfPremium() {
+		beforeCurrentTestScript();
+		pbProductPage.selectModeOfPremium();
+	}
+
+	@Test(priority = 6)
+	public void validateFUllName() {
+		beforeCurrentTestScript();
+		pbProductPage.enterFullName();
+	}
+
+	@Test(priority = 7)
+	public void validateEmail() {
+		beforeCurrentTestScript();
+		pbProductPage.enterEmail();
+	}
+
+}

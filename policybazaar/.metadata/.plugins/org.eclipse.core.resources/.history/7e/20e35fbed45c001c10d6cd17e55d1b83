@@ -1,0 +1,44 @@
+package POM_page_object_model;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+
+
+public class login_page {
+	WebDriver driver;
+//private By usernametext = By.name("user_name");
+//private By passwordtext = By.name("user_password");
+//private By loginbtn     = By.name("Login");
+	@FindBy(name = "user_name")
+	WebElement usernametext;
+
+	@FindBy(name = "user_password")
+	WebElement passwordtext;
+
+	@FindBy(name = "Login")
+	WebElement loginbtn;
+
+	public login_page(WebDriver driver) {
+	//	PageFactory.initElements(driver, this);
+		this.driver = driver ;
+	}
+
+	public void enter_username(String usertext) {
+		//driver.findElement(usernametext).sendKeys(usertext);
+		usernametext.sendKeys(usertext);
+
+	}
+
+	public void enter_password(String passtext) {
+		
+//		driver.findElement(passwordtext).sendKeys(passtext);
+		passwordtext.sendKeys(passtext);
+	}
+
+	public void click_on_loginbtn() {
+		driver.findElement(loginbtn).click();
+		//loginbtn.click();
+	}
+
+}

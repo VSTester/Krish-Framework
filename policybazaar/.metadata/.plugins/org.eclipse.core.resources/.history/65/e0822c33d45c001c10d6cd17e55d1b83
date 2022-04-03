@@ -1,0 +1,31 @@
+package come.vtiger.qa.Runner;
+
+import org.junit.runner.RunWith;
+import cucumber.api.CucumberOptions;
+import cucumber.api.junit.Cucumber;
+
+
+@RunWith(Cucumber.class)
+@CucumberOptions(
+		features = { "C:\\Users\\Rinku PC\\Desktop\\krish\\Cucmber_Vtiger_Testing\\"
+		          + "src\\test\\resources\\com.vtiger.qa.Features\\login.feature"} 
+, glue = {"com.vtiger.qa.stepdefs" }
+, monochrome = true
+, strict = true
+, dryRun = true)
+//plugin = {"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"})
+//,plugin = { "com.vimalselvam.cucumber.listener.ExtentCucumberFormatter:path/report.html"})
+//, plugin = { "com.cucumber.listener.ExtentCucumberFormatter:target/cucumber-reports/report.html" })
+//, plugin = { "pretty",
+			//"html:HTML-Reports/senario_1", "json:JSON-Reports/senario_1.json",
+		//	"com.cucumber.listener.ExtentCucumberFormatter:target/html/ExtentReport.html"}
+		
+
+public class Test_Runner {
+	
+//	public static void writeExtentReport() {
+//        Reporter.loadXMLConfig(new File("config/report.xml"));
+//}
+
+}
+

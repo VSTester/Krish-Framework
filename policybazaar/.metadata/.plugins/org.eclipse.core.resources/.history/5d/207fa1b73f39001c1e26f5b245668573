@@ -1,0 +1,17 @@
+package practice;
+
+import org.testng.annotations.Test;
+
+public class TestIng {
+
+	
+	@Test
+	public void Test1() {
+		System.out.println("hello");
+	}
+	
+	
+	
+	
+	
+}
